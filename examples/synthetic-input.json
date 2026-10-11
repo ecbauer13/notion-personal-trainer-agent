@@ -1,0 +1,462 @@
+{
+  "synthetic": true,
+  "description": "Invented records for demonstration; no personal data.",
+  "review_period": {
+    "start_date": "2030-06-03",
+    "end_date": "2030-06-30",
+    "days": 28,
+    "timezone": "America/New_York"
+  },
+  "workout_records": [
+    {
+      "id": "synthetic-leg-8",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-06-03"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "16",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-9",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-06-10"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "17",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-9",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-06-08"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "15",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-10",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-06-17"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "18",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-10",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-06-15"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "16",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-11",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-06-30"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "19",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-11",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-06-28"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "17",
+      "property_set_weights": "40",
+      "property_notes": ""
+    }
+  ],
+  "historical_workout_records": [
+    {
+      "id": "synthetic-leg-0",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-04-08"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "8",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-0",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-04-06"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "6",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-1",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-04-15"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "9",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-1",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-04-13"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "7",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-2",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-04-22"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "10",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-2",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-04-20"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "8",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-3",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-04-29"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "11",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-3",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-04-27"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "9",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-4",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-05-06"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "12",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-4",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-05-04"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "10",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-5",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-05-13"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "13",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-5",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-05-11"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "11",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-6",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-05-20"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "14",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-6",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-05-18"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "12",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-7",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-05-27"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "15",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-7",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-05-25"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "13",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-8",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-06-03"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "16",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-8",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-06-01"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "14",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-9",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-06-10"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "17",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-9",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-06-08"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "15",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-10",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-06-17"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "18",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-10",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-06-15"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "16",
+      "property_set_weights": "40",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-leg-11",
+      "name": "Leg press",
+      "property_workout_date": {
+        "start": "2030-06-30"
+      },
+      "property_completed": true,
+      "property_session": "Demo A",
+      "property_training_block": "Demo block",
+      "property_set_reps": "19",
+      "property_set_weights": "100",
+      "property_notes": ""
+    },
+    {
+      "id": "synthetic-row-11",
+      "name": "Cable row",
+      "property_workout_date": {
+        "start": "2030-06-28"
+      },
+      "property_completed": true,
+      "property_session": "Demo B",
+      "property_training_block": "Demo block",
+      "property_set_reps": "17",
+      "property_set_weights": "40",
+      "property_notes": ""
+    }
+  ],
+  "workout_history_scope": "all_completed_through_review_end",
+  "body_metric_records": [
+    {
+      "id": "synthetic-weight-0",
+      "property_date": {
+        "start": "2030-06-30"
+      },
+      "property_body_weight": 150
+    },
+    {
+      "id": "synthetic-weight-1",
+      "property_date": {
+        "start": "2030-06-29"
+      },
+      "property_body_weight": 150
+    },
+    {
+      "id": "synthetic-weight-2",
+      "property_date": {
+        "start": "2030-06-28"
+      },
+      "property_body_weight": 150
+    },
+    {
+      "id": "synthetic-weight-3",
+      "property_date": {
+        "start": "2030-06-23"
+      },
+      "property_body_weight": 150
+    },
+    {
+      "id": "synthetic-weight-4",
+      "property_date": {
+        "start": "2030-06-22"
+      },
+      "property_body_weight": 150
+    },
+    {
+      "id": "synthetic-weight-5",
+      "property_date": {
+        "start": "2030-06-21"
+      },
+      "property_body_weight": 150
+    }
+  ]
+}

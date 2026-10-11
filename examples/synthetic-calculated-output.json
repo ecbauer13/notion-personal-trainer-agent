@@ -1,0 +1,110 @@
+{
+  "synthetic": true,
+  "weekly_snapshot": {
+    "start_date": "2030-06-24",
+    "end_date": "2030-06-30",
+    "training_days_logged": {
+      "value": 2,
+      "scope": "completed_exercise_records_latest_7_days"
+    },
+    "active_weeks": {
+      "value": 4,
+      "out_of": 4,
+      "periods": [
+        {
+          "start_date": "2030-06-24",
+          "end_date": "2030-06-30",
+          "training_days": 2
+        },
+        {
+          "start_date": "2030-06-17",
+          "end_date": "2030-06-23",
+          "training_days": 1
+        },
+        {
+          "start_date": "2030-06-10",
+          "end_date": "2030-06-16",
+          "training_days": 2
+        },
+        {
+          "start_date": "2030-06-03",
+          "end_date": "2030-06-09",
+          "training_days": 2
+        }
+      ]
+    },
+    "exercises_progressed": {
+      "status": "assessed",
+      "value": 2,
+      "out_of": 2
+    },
+    "recorded_rep_bests": {
+      "status": "assessed",
+      "value": 2,
+      "eligible_groups": 2,
+      "excluded_groups": 0,
+      "scope": "available_recorded_history_within_same_training_block",
+      "findings": [
+        {
+          "exercise": "Leg press",
+          "session": "Demo A",
+          "training_block": "Demo block",
+          "evidence": [
+            {
+              "date": "2030-06-30",
+              "set": 1,
+              "load_lb_as_logged": 100,
+              "prior_best_reps": 18,
+              "new_best_reps": 19,
+              "set_count": 1
+            }
+          ]
+        },
+        {
+          "exercise": "Cable row",
+          "session": "Demo B",
+          "training_block": "Demo block",
+          "evidence": [
+            {
+              "date": "2030-06-28",
+              "set": 1,
+              "load_lb_as_logged": 40,
+              "prior_best_reps": 16,
+              "new_best_reps": 17,
+              "set_count": 1
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "longer_context": {
+    "exercise": "Leg press",
+    "session": "Demo A",
+    "training_block": "Demo block",
+    "selection_basis": "repeated_progress",
+    "placement": "append_to_existing_exercise_bullet",
+    "latest_session_category": "Clear progress",
+    "short_term_category": "Repeated progress",
+    "windows": [
+      {
+        "weeks": 12,
+        "category": "Repeated progress",
+        "reason": "Required improving comparisons met; every other recorded comparison maintained performance.",
+        "window_start": "2030-04-08",
+        "window_end": "2030-06-30",
+        "observed_start_date": "2030-04-08",
+        "observed_end_date": "2030-06-30",
+        "valid_session_count": 12,
+        "occupied_week_count": 12,
+        "comparison_counts": {
+          "Clear progress": 11,
+          "Maintained performance": 0,
+          "Mixed change": 0,
+          "Decline to monitor": 0
+        },
+        "mixed_reasons": []
+      }
+    ]
+  }
+}
