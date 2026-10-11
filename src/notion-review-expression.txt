@@ -1,0 +1,43 @@
+={{ (() => {
+const buildReviewBlocks = (text, snapshot) => {
+  if (typeof text !== 'string' || !text.trim()) throw new Error('No review text received; page creation stopped.');
+  if (!snapshot) throw new Error('No calculated weekly snapshot; page creation stopped.');
+  const rich = (content, annotations={}) => Array.from({length:Math.ceil(Array.from(String(content)).length/900)}, (_, index) => ({
+    type:'text', text:{content:Array.from(String(content)).slice(index*900,(index+1)*900).join('')}, annotations}));
+  const block = (type, content, color='default') => ({object:'block', type,
+    [type]:{rich_text:rich(content),color,...(type.startsWith('heading_') ? {is_toggleable:false} : {})} });
+  const card = (icon, title, value, footer, color) => ({object:'block',type:'callout',callout:{
+    icon:{type:'emoji',emoji:icon},color:color+'_background',rich_text:rich(title,{bold:true}),
+    children:[block('heading_2',value,color),block('paragraph',footer)]} });
+  const row = cards => ({object:'block',type:'column_list',column_list:{children:cards.map(card=>({
+    object:'block',type:'column',column:{width_ratio:0.5,children:[card]} }))} });
+  const blocks = [block('heading_2','Weekly Snapshot','blue'),
+    row([
+      card('📅','Training\ndays',String(snapshot.training_days_logged.value),'Last\n7 days','blue'),
+      card('🗓️','Active\nweeks',snapshot.active_weeks.value+' / 4','Last\n4 weeks','blue')]),
+    row([
+      card('📈','Exercises\nprogressed',snapshot.exercises_progressed.status==='assessed' ?
+        snapshot.exercises_progressed.value+' / '+snapshot.exercises_progressed.out_of : '—',
+        snapshot.exercises_progressed.status==='assessed' ? 'Comparable\nexercises' : 'Not\nassessable','pink'),
+      card('🏅','Rep bests\nby exercise',snapshot.recorded_rep_bests.status==='assessed' ?
+        String(snapshot.recorded_rep_bests.value) : '—',
+        snapshot.recorded_rep_bests.status==='assessed' ? 'Same load\n& set context' : 'Not\nassessable','pink')])];
+  for (const raw of text.split(/\r?\n/)) {
+    const line = raw.trim(); if (!line) continue;
+    const heading = line.match(/^#{1,6}\s+(.+)$/);
+    const bullet = line.match(/^[-*•]\s+(.+)$/);
+    const type = heading ? 'heading_2' : bullet ? 'bulleted_list_item' : 'paragraph';
+    const content = heading ? heading[1] : bullet ? bullet[1] : line;
+    const node = block(type,content.replace(/\*\*(.*?)\*\*/g,'$1'),heading ? 'blue' : 'default');
+    if (bullet) {
+      const label = content.replace(/\*\*(.*?)\*\*/g,'$1').match(/^([^:]+:)\s*(.*)$/);
+      if (label) node[type].rich_text = [...rich(label[1],{bold:true,color:'pink'}),...rich(' '+label[2].replace(/\*\*(.*?)\*\*/g,'$1'))];
+    }
+    blocks.push(node);
+  }
+  const count = nodes => nodes.reduce((sum,node)=>sum+1+count(node[node.type].children ?? []),0);
+  if (count(blocks)>100) throw new Error('Review exceeds 100 blocks; page creation stopped.');
+  return blocks;
+};
+return JSON.stringify(buildReviewBlocks($json.text, $('Prepare AI Review Input').first().json.weekly_snapshot));
+})() }}
